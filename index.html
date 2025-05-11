@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primer Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a class="navbarlinks" href="#about">Acerca de</a></li>
+                <li><a class="navbarlinks" href="#projects">Proyectos</a></li>
+                <li><a class="navbarlinks" href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Contenido principal -->
+    <main>
+        <section class="about">
+            <h1>Hola</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
+                iste amet accusamus quod possimus, laborum omnis magnam nostrum eos
+                tempore, saepe delectus nulla suscipit ab quo explicabo! Aperiam,
+                optio similique.
+            </p>
+            <div>
+                 <img src="./img/avatar.jpg" alt="imagen avatar" width="460" height="auto" id="about-avatar" />
+            </div>
+           
+        </section>
+
+        <!-- skills -->
+        <section class="skills">
+            <h2>Skills</h2>
+            <table class="table-skills">
+                <tr>
+                    <td>HTML</td>
+                    <td>CSS</td>
+                    <td>JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Bootstrap</td>
+                    <td>Git</td>
+                    <td>SEO</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- proyectos -->
+        <section class="projects">
+            <h2 class="projects_item">Projectos</h2>
+            <table class="table-proyects">
+                <tr>
+                    <td>Proyecto 1</td>
+                    <td>Proyecto 2</td>
+                    <td>Proyecto 3</td>
+                </tr>
+            </table>
+        </section>
+        <!-- proyectos -->
+        <section class="contact">
+            <h2>Contacto</h2>
+            <form id="contact_form" method="post">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" placeholder="Nombre" id="name" name="name" required="" />
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Email" id="email" name="email" required="" />
+                </div>
+                <div>
+                    <textarea placeholder="Mensaje" id="message" name="message" required=""></textarea>
+                </div>
+                <button type="submit" class="btn_form"><span>Enviar</span></button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer></footer>
+</body>
+
+</html>

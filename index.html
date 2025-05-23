@@ -11,25 +11,28 @@
 
 <body>
     <!-- Encabezado -->
-    <header>
-        <nav class="navbar" id="navbar">
-            <ul>
-                <li><a class="navbarlinks" href="#about">Acerca de</a></li>
-                <li><a class="navbarlinks" href="#projects">Proyectos</a></li>
-                <li><a class="navbarlinks" href="#contact">Contacto</a></li>
+    <header class="menu_header">
+        <nav  id="navbar">
+            <ul class="navbar">
+                <li><a class="navbar_item" href="#about">Sobre mi</a></li>
+                <li><a class="navbar_item" href="#projects">Proyectos</a></li>
+                <li><a class="navbar_item" href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <!-- Contenido principal -->
     <main>
-        <section class="about">
-            <h1>Hola</h1>
-            <p>
+        <section class="about" id="about">
+            <div class="about_text">
+                <h1>Hola</h>
+                <h3>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
                 iste amet accusamus quod possimus, laborum omnis magnam nostrum eos
                 tempore, saepe delectus nulla suscipit ab quo explicabo! Aperiam,
                 optio similique.
-            </p>
+                </h3>
+            </div>
+
             <div>
                  <img src="./img/avatar.jpg" alt="imagen avatar" width="460" height="auto" id="about-avatar" />
             </div>
@@ -37,24 +40,47 @@
         </section>
 
         <!-- skills -->
-        <section class="skills">
-            <h2>Skills</h2>
-            <table class="table-skills">
-                <tr>
-                    <td>HTML</td>
-                    <td>CSS</td>
-                    <td>JavaScript</td>
-                </tr>
-                <tr>
-                    <td>Bootstrap</td>
-                    <td>Git</td>
-                    <td>SEO</td>
-                </tr>
-            </table>
+        <section class="skills_seccion">
+            <h2 class="Skill_titile">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="./img/html.png" alt="HTML" />
+                    <span>HTML</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./img/css.png" alt="CSS" />
+                    <span>CSS</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./img/javascript.png" alt="JS" />
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./img/python.png" alt="Python" />
+                    <span>Python</span>
+                </div>
+                <div class="skill-item">
+                    <img src="./img/vsc.png" alt="VSC" />
+                    <span>VS Code</span>
+                </div>
+            </div>
+        
+            <!-- <table class="table-skills">
+                        <tr>
+                            <td>HTML</td>
+                            <td>CSS</td>
+                            <td>JavaScript</td>
+                        </tr>
+                        <tr>
+                            <td>Bootstrap</td>
+                            <td>Git</td>
+                            <td>SEO</td>
+                        </tr>
+                    </table> -->
         </section>
 
         <!-- proyectos -->
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2 class="projects_item">Projectos</h2>
             <table class="table-proyects">
                 <tr>
@@ -65,7 +91,7 @@
             </table>
         </section>
         <!-- proyectos -->
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2>Contacto</h2>
             <form id="contact_form" method="post">
                 <div>

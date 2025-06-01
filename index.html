@@ -12,7 +12,12 @@
 <body>
     <!-- Encabezado -->
     <header class="menu_header">
-        <nav  id="navbar">
+        <nav id="navbar">
+            <span>🌸</span>
+            <!-- <a href="#about" class="navbar_logo">
+            <img src="" alt="Logo">
+            </a> -->
+
             <ul class="navbar">
                 <li><a class="navbar_item" href="#about">Sobre mi</a></li>
                 <li><a class="navbar_item" href="#projects">Proyectos</a></li>
@@ -21,97 +26,186 @@
         </nav>
     </header>
     <!-- Contenido principal -->
-    <main>
-        <section class="about" id="about">
-            <div class="about_text">
-                <h1>Hola</h>
-                <h3>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem
-                iste amet accusamus quod possimus, laborum omnis magnam nostrum eos
-                tempore, saepe delectus nulla suscipit ab quo explicabo! Aperiam,
-                optio similique.
-                </h3>
-            </div>
+    <div class="hero-container">
+        <div class="hero-wrapper">
+            <div class="hero">
+                <span class="greeting">Hola! 👋 Soy</span>
+                <h1 class="name">Miriam</h1>
+                <div>
+                    <h2 class="role">Fullstack Developer Jr.</h2>
+                </div>
+                <!-- <p class="description">Desarrolladora FullStack</p> -->
 
+                <div class="icon-block">
+                    <p><span class="icon icon-green">🚀</span>Estudiante de Desarrollo de Software</p>
+                    <!-- <p><span class="icon icon-blue">🛠️</span>Crafting valuable applications</p> -->
+                </div>
+
+                <div class="social-icons">
+                    <div class="icon">
+                        <a href="" title="Github" target="">
+                            <img src="./img/brand-github.svg" alt="Github">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="" title="LinkedIn" target="">
+                            <img src="./img/brand-linkedin.svg" alt="LinkedIn">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="" title="whatsapp" target="">
+                            <img alt="Bluesky" src="./img/brand-whatsapp.svg" width="40" height="40">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="" title="Email" target="">
+                            <img alt="Email" src="./img/brand-gmail.svg" width="40" height="40">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="about" id="about">
+        <h2 class="seccion_title">Sobre mí</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    ✨ Soy desarrolladora Fullstack Jr. con entusiasmo por el diseño frontend. Me gusta crear landing
+                    pages simples, limpias
+                    y centradas en el producto.
+                    Me interesa probar nuevas tecnologías y me mantengo actualizada realizando cursos en las áreas que
+                    me apasionan.
+
+                    Busco seguir creciendo como desarrolladora y sumar valor en proyectos reales.
+                </p>
+                <!-- <a href="#" class="btn-cv">Contacto</a> -->
+            </div>
+            <div class="about-image">
+                <div class="avatar-border">
+                    <img src="./img/avatar.jpg" alt="imagen avatar" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- skills -->
+    <section class="skills_seccion">
+        <h2 class="seccion_title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <img src="./img/html.png" alt="HTML" />
+                <span>HTML</span>
+            </div>
+            <div class="skill-item">
+                <img src="./img/css.png" alt="CSS" />
+                <span>CSS</span>
+            </div>
+            <div class="skill-item">
+                <img src="./img/javascript.png" alt="JS" />
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+                <img src="./img/python.png" alt="Python" />
+                <span>Python</span>
+            </div>
+            <div class="skill-item">
+                <img src="./img/vsc.png" alt="VSC" />
+                <span>VS Code</span>
+            </div>
+            <div class="skill-item">
+                <img src="./img/icon-api.png" alt="API" />
+                <span>API</span>
+            </div>
+        </div>
+    </section>
+    <!-- proyectos -->
+    <section class="projects" id="projects">
+        <h2 class="seccion_title">Projectos</h2>
+        <div class="card-grid">
+            <div class="card-item">
+                <img src="./img/2004.jpg" alt="" />
+                <span>Proyecto 1</span>
+            </div>
+            <div class="card-item">
+                <img src="./img/7203771a.jpg" alt="" />
+                <span>Proyecto 2</span>
+            </div>
+            <div class="card-item">
+                <img src="./img/2724456.jpg" alt="" />
+                <span>Proyecto 3</span>
+            </div>
+            <div class="card-item">
+                <img src="./img/7238672.jpg" alt="" />
+                <span>Proyecto 4</span>
+            </div>
+            <div class="card-item">
+                <img src="./img/3288661.jpg" alt="" />
+                <span>Proyecto 5</span>
+            </div>
+            <div class="card-item">
+                <img src="./img/4828904.jpg" alt="" />
+                <span>Proyecto 6</span>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="seccion_title">Contacto</h2>
+        <form id="contact_form" method="post">
             <div>
-                 <img src="./img/avatar.jpg" alt="imagen avatar" width="460" height="auto" id="about-avatar" />
+                <label for="name">Nombre</label>
+                <input type="text" placeholder="Nombre" id="name" name="name" required="" />
             </div>
-           
-        </section>
-
-        <!-- skills -->
-        <section class="skills_seccion">
-            <h2 class="Skill_titile">Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <img src="./img/html.png" alt="HTML" />
-                    <span>HTML</span>
-                </div>
-                <div class="skill-item">
-                    <img src="./img/css.png" alt="CSS" />
-                    <span>CSS</span>
-                </div>
-                <div class="skill-item">
-                    <img src="./img/javascript.png" alt="JS" />
-                    <span>JavaScript</span>
-                </div>
-                <div class="skill-item">
-                    <img src="./img/python.png" alt="Python" />
-                    <span>Python</span>
-                </div>
-                <div class="skill-item">
-                    <img src="./img/vsc.png" alt="VSC" />
-                    <span>VS Code</span>
-                </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="email" name="email" required="" />
             </div>
-        
-            <!-- <table class="table-skills">
-                        <tr>
-                            <td>HTML</td>
-                            <td>CSS</td>
-                            <td>JavaScript</td>
-                        </tr>
-                        <tr>
-                            <td>Bootstrap</td>
-                            <td>Git</td>
-                            <td>SEO</td>
-                        </tr>
-                    </table> -->
-        </section>
-
-        <!-- proyectos -->
-        <section class="projects" id="projects">
-            <h2 class="projects_item">Projectos</h2>
-            <table class="table-proyects">
-                <tr>
-                    <td>Proyecto 1</td>
-                    <td>Proyecto 2</td>
-                    <td>Proyecto 3</td>
-                </tr>
-            </table>
-        </section>
-        <!-- proyectos -->
-        <section class="contact" id="contact">
-            <h2>Contacto</h2>
-            <form id="contact_form" method="post">
-                <div>
-                    <label for="name">Nombre</label>
-                    <input type="text" placeholder="Nombre" id="name" name="name" required="" />
-                </div>
-                <div>
-                    <label for="email">Email</label>
-                    <input type="email" placeholder="Email" id="email" name="email" required="" />
-                </div>
-                <div>
-                    <textarea placeholder="Mensaje" id="message" name="message" required=""></textarea>
-                </div>
-                <button type="submit" class="btn_form"><span>Enviar</span></button>
-            </form>
-        </section>
-    </main>
+            <div>
+                <label for="subjet">Asunto</label>
+                <input type="text" placeholder="Asunto" id="subjet" name="subjet" required="" />
+            </div>
+            <div>
+                <textarea placeholder="Mensaje" id="message" name="message" required=""></textarea>
+            </div>
+            <button type="submit" class="btn_form"><span>Enviar</span></button>
+        </form>
+    </section>
 
     <!-- Pie de pagina -->
-    <footer></footer>
+
+    <footer class="">
+        <div class="contact-social">
+            <div class="">
+                <div class="social-icons">
+                    <div class="icon">
+                        <a href="" title="Github" target="">
+                            <img alt="Github" src="./img/brand-github.svg" width="40" height="40">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="" title="LinkedIn" target="">
+                            <img alt="LinkedIn" src="./img/brand-linkedin.svg" width="40" height="40">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="" title="whatsapp" target="">
+                            <img alt="Bluesky" src="./img/brand-whatsapp.svg" width="40" height="40">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="" title="Email" target="">
+                            <img alt="Email" src="./img/brand-gmail.svg" width="40" height="40">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-text">2025</p>
+        </div>
+    </footer>
+
+
+
 </body>
 
 </html>
